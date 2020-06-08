@@ -1,7 +1,10 @@
-This is a React App for Liferay 
+## Overview
+
+This is a React App that has been adapted to run in Liferay DXP using, for details see <a href="https://help.liferay.com/hc/en-us/articles/360035467712-Adapting-Existing-Apps-to-Run-on-Liferay-DXP" target="_self">Liferay Tooling</a>
+
 ![Screenshot](screenshot.png)
 
-## Available Scripts
+## Available Scripts for React
 
 In the project directory, you can run:
 
@@ -21,5 +24,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Available Scripts for Liferay
 
+Once updates have been made to the React application, you can run the npm build command to prepare the project for deployment to DXP.
+```console
+npm run build:liferay
+```
