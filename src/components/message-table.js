@@ -36,7 +36,7 @@ const MessageTable =() => {
             </thead>
             <tbody>
                 <tr>
-                <td>JDF-38293</td>
+                <td>DDF-38293</td>
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>Open</td>

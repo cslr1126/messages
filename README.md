@@ -25,8 +25,15 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 ## Available Scripts for Liferay
+<p> *** Update the local Liferay bundle path *** </p>
+<p> Navigate to the root directory of the project, edit the .npmbuildrc file to point to your local Liferay DXP bundle, i.e. /Users/liferay/ </p>
 
 Once updates have been made to the React application, you can run the npm build command to prepare the project for deployment to DXP.
 ```console
 npm run build:liferay
+```
+
+After a successful build, run the deploy command
+```console
+npm run deploy:liferay
 ```
