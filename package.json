@@ -6,7 +6,10 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
@@ -14,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:liferay": "lnbs-build",
+    "deploy:liferay": "yarn run build:liferay && lnbs-deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,5 +35,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "liferay-npm-build-support": "^2.18.5",
+    "liferay-npm-bundler": "^2.18.5",
+    "liferay-npm-bundler-preset-create-react-app": "^2.18.5"
+  },
+  "portlet": {
+    "com.liferay.portlet.display-category": "category.sample",
+    "javax.portlet.name": "messages",
+    "javax.portlet.security-role-ref": "power-user,user",
+    "javax.portlet.resource-bundle": "content.Language",
+    "com.liferay.portlet.instanceable": true
   }
 }
