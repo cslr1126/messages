@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import MessageTable from './components/message-table';
+import MessageLayout from './layouts/MessageLayout';
 
 function App() {
   return (
     <Container>
       <Row>
         <Col>
-         <MessageTable />
+         <MessageLayout />
         </Col>
       </Row>
     </Container>

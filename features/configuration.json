@@ -1,0 +1,41 @@
+{ 
+	"$schema": "https://raw.githubusercontent.com/liferay/liferay-js-toolkit/master/resources/schemas/configuration.schema.json",
+	"system": {
+		"category": "messages", 
+		"name": "messages",
+		"fields": { 
+			"roles": {
+				"type": "string",
+				"name": "Roles",
+				"description": "fruit-help",
+				"default": "employee",
+				"options": {
+					"orange": "Employee",
+					"pear": "Manager",
+					"apple": "Other"
+				}
+			},
+			"host-name": {
+				"type": "string",
+				"name": "host-name",
+				"description": "Host name",
+				"default": "internal.host.name"
+			}
+		} 
+	},
+	"portletInstance": {
+		"fields": { 
+			"count": {
+				"type": "string",
+				"name": "Items",
+				"description": "Number of Items",
+				"default": "4",
+				"options": {
+					"4": "4 Items",
+					"6": "6 Items",
+					"8": "8 Items"
+				}
+			}
+		} 
+	}
+}
