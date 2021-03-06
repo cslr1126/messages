@@ -9,8 +9,8 @@ const MessageLayout = () => {
     const [messages, setMessages] = useState([0]);
 
     function getAuthToken() {
-        let username = 'bruno';
-        let password = 'bruno';
+        let username = 'test@liferay.com';
+        let password = 'test';
       
         return 'Basic ' + window.btoa(username + ":" + password);
     }
@@ -23,7 +23,7 @@ const MessageLayout = () => {
             let auth = getAuthToken();
       
             const result = axios( {
-                url: `http://localhost:8080/o/headless-form/v1.0/sites/167985/forms`,
+                url: `https://webserver-lctexcellus-prd.lfr.cloud/o/headless-form/v1.0/sites/40450/forms`,
                 method: 'get',
                 headers: {
                     'content-type': 'application/json;charset=UTF-8',

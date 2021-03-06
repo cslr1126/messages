@@ -14,7 +14,7 @@ const NewsList = ({items}) => {
             let auth = getAuthToken();
 
             const result = axios( {
-                url: `http://localhost:8080/o/headless-delivery/v1.0/content-structures/36944/structured-contents?pageSize=${items}`,
+                url: `http://localhost:8080/o/headless-delivery/v1.0/content-structures/168098/structured-contents?pageSize=${items}`,
                 method: 'get',
                 headers: {
                     'content-type': 'application/json;charset=UTF-8',
@@ -34,8 +34,8 @@ const NewsList = ({items}) => {
 
     function getAuthToken()
     {
-        let username = 'test@liferay.com';
-        let password = 'test';
+        let username = 'bruno';
+        let password = 'bruno';
 
         return 'Basic ' + window.btoa(username + ":" + password);
     }
